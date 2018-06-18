@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/train.png" type="Texture" id=1]
+[ext_resource path="res://Particles2D.tscn" type="PackedScene" id=2]
+
+[node name="Train" type="Sprite" index="0"]
+
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Particles2D2" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 137, -5 )
+
+

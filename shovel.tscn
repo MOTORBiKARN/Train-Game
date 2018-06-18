@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://shovel.gd" type="Script" id=1]
+[ext_resource path="res://assets/shovel.png" type="Texture" id=2]
+
+[node name="Shovel" type="RigidBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = 128.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Angular" ]
+wanted_angle = 0
+impulse_scalar = 30
+rotation_speed = 140
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="0"]
+
+position = Vector2( 2, -5 )
+rotation = -0.605235
+scale = Vector2( 1.08, 1.08 )
+build_mode = 0
+polygon = PoolVector2Array( 14.4578, 14.5289, 18.9386, 20.9508, 23.3734, 23.6682, 30.7, 25.7551, 44.0387, 27.2655, 41.6035, 29.2642, 34.8796, 29.3484, 27.453, 28.4201, 20.665, 27.5829, 16.4034, 24.1083, 10.8637, 14.5724, -39.1996, -21.5306, -37.9861, -23.2845 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+
